@@ -1,426 +1,189 @@
+/*__VARIALES__*/
+:root {
+  --main-color: #2196f3;
+  --main-color-light: #d2e1ff;
+  --main-color-dark: black;
+  --text-color-dark: #697ca6;
+  --secont-color: #d43f3f;
+  --second-color-light: #3a79ff;
+  --text-color-normal: #adb3cb;
+}
+
+/*__HEADER__*/
+
 .header {
-  padding: 25px 15px;
-  height: 80px;
-  width: 1600px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-  background-color: #ffffff;
+  padding: 18px 117px;
+  border-bottom: 2px solid gray;
 }
 
-.header-container {
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
+/*__LOGO__*/
+
+.logo {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #2196f3;
 }
 
-.nav {
-  /* WebStudio */
+/*__NAVIGATION__*/
 
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
-  letter-spacing: 0.03em;
-
-  color: #2196f3;
-}
-
-.header-contacts {
-  /* info@devstudio.com */
-
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #2196f3;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
+.navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #f9f9fd;
 }
 
-.container-main {
-  /* Bg */
-
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-
-  background: #2f303a;
+.navigation-nav {
+  display: flex;
+  align-items: center;
 }
 
-.section-text-item {
-  /* Эффективные решения для вашего бизнеса */
+.navigation-menu {
+  display: flex;
+  margin-left: 52px;
+}
 
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
+.navigation-menu-item {
+  margin: 0 21px;
+}
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
+.navigation-menu-link {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #212121;
+  transition: 0.4s;
+}
+
+.navigation-menu-link:hover {
+  color: #5e81fe;
+}
+
+.navigation-contacts {
+  display: flex;
+}
+
+.navigation-contacts-item {
+  margin: 0 14px;
+}
+
+.navigation-contacts-link {
+  color: #757575;
+}
+
+/*__MAIN__*/
+
+.conteiner-main {
+  margin-left: auto;
+  margin-right: 27px;
+  background-color: #2f303a;
+}
+
+.section-header-item {
+  margin-left: flex;
+  margin-right: 27px;
+  background-color: #2f303a;
+}
+
+.section-item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: black;
+  color: #ffffff;
 }
 
-.button {
-  /* bg */
+.button_blue {
+  display: inline-block;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 13px 15px;
+  border-radius: 25px;
+  color: #2196f3;
+}
 
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.section-header-item .button_blue {
+  color: #2196f3;
 }
 
 .section-item {
-  /* Главная */
-
-  position: relative;
-  width: 1600px;
-  height: 2349px;
-
-  background: #ffffff;
+  padding: 171px 15px;
 }
 
-.section-container {
-  /* Особенности */
-
-  position: absolute;
-  width: 1170px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
+.section-conteiner {
+  display: flex;
+  justify-content: center;
+  margin-top: 92px;
 }
 
-.container-text {
-  /* Внимание к деталям */
-
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 215px;
-  top: 774px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+.conteiner-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
   text-transform: uppercase;
-
-  color: #212121;
+  color: var(--main-color-dark);
 }
 
 .text {
-  /* Идейные соображения, а также начало повседневной работы по формированию позиции. */
-
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 215px;
-  top: 800px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.container-text-1 {
-  /* Пунктуальность */
-
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 515px;
-  top: 774px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-
-.text-1 {
-  /* Задача организации, в особенности же рамки и место обучения кадров влечет за собой. */
-
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 515px;
-  top: 800px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.container-text-2 {
-  /* Планирование */
-
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 815px;
-  top: 774px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-
-.text-2 {
-  /* Равным образом консультация с широким активом в значительной степени обуславливает. */
-
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 815px;
-  top: 800px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.container-text-3 {
-  /* Современные технологии */
-
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 1115px;
-  top: 774px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-
-.text-3 {
-  /* Значимость этих проблем настолько очевидна, что реализация плановых заданий. */
-
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 1115px;
-  top: 800px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-
-  color: #757575;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--main-color);
+  margin-bottom: 25px;
 }
 
 .portfolio {
-  /* Чем мы занимаемся */
-
-  position: absolute;
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 969px;
-
-  /* box 1 */
-
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
-
-  /* img */
-
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
-
-  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-  mix-blend-mode: normal;
-
-  /* box 2 */
-
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 1061px;
-
-  /* img */
-
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 1061px;
-
-  background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
-
-  /* box 3 */
-
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 1061px;
-
-  /* img */
-
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 1061px;
-
-  background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
-
-  /* Чем мы занимаемся */
-
-  position: absolute;
-  width: 376px;
-  height: 42px;
-  left: 612px;
-  top: 969px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
+  margin-left: auto;
+  margin-right: 27px;
 }
 
-.section-potfolio-text {
-  /* Чем мы занимаемся */
-
-  position: absolute;
-  width: 376px;
-  height: 42px;
-  left: 612px;
-  top: 969px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+.section-portfolio {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
+  text-transform: uppercase;
 }
 
 .our-team-list {
-  /* Чем мы занимаемся */
-
-  position: absolute;
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 969px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 25px;
 }
 
 .our-team-item {
-  /* img */
+  margin-left: auto;
+  margin-right: 27px;
+}
 
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
+.our-team-item-image {
+  height: 20vh;
+  padding-top: 170px;
+  text-align: center;
+  background-image: url("../images/img.png") center/cover no-repeat;
+}
 
-  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-  mix-blend-mode: normal;
+.our-team {
+  margin-left: auto;
+  margin-right: 27px;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*__FOOTER__*/
+
+.footer {
+  padding: 93px 117px;
 }
