@@ -20,9 +20,15 @@
 
 .logo {
   display: inline-block;
-  width: 26px;
-  height: 26px;
-  background-color: #2196f3;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  color: #212121;
+}
+
+.logo-first-letters {
+  color: #2196f3;
 }
 
 /*__NAVIGATION__*/
@@ -93,6 +99,15 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.section-button_blue {
+  margin-left: 1150px;
+  margin-right: 200px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  background-color: #2196f3;
 }
 
 .button_blue {
