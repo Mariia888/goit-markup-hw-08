@@ -78,6 +78,10 @@
   color: #757575;
 }
 
+.navigation-contacts-link:hover {
+  color: #5e81fe;
+}
+
 /*__MAIN__*/
 
 .conteiner-main {
@@ -148,7 +152,7 @@
   font-size: 11px;
   font-weight: 600;
   line-height: 1.8;
-  color: var(--main-color);
+  color: var(--main-color-dark);
   margin-bottom: 25px;
 }
 
