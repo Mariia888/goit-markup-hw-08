@@ -14,6 +14,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   background-color: var(--title-fon);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
@@ -26,7 +27,7 @@ ul {
 /*__HEADER__*/
 
 .header {
-  background: var(--title-fon);
+  background-color: var(--title-fon);
 }
 
 /*__LOGO__*/
@@ -46,21 +47,12 @@ ul {
 
 /*__NAVIGATION__*/
 
-.navigation {
-}
-
-.navigation-nav {
-}
-
 .navigation-menu {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
-}
-
-.navigation-menu-item {
 }
 
 .navigation-menu-link {
@@ -74,12 +66,6 @@ ul {
 
 .navigation-menu-link:hover {
   color: var(--accent-color);
-}
-
-.navigation-contacts {
-}
-
-.navigation-contacts-item {
 }
 
 .navigation-contacts-link {
@@ -115,7 +101,7 @@ ul {
 }
 
 .section-button_blue {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -128,9 +114,6 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-fon);
-}
-
-.section-item {
 }
 
 .section-conteiner {
@@ -154,9 +137,6 @@ ul {
   color: var(--title-text-color);
 }
 
-.portfolio {
-}
-
 .section-portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -169,15 +149,6 @@ ul {
   font-size: 11px;
   font-weight: 600;
   line-height: 1.8;
-}
-
-.our-team-item {
-}
-
-.our-team-item-image {
-}
-
-.our-team {
 }
 
 .container {
@@ -205,7 +176,7 @@ ul {
 }
 
 .container-main-portfolio1 {
-  background: var(--title-fon);
+  background-color: var(--title-fon);
   height: 80px;
   width: 1200px;
 }
@@ -229,16 +200,13 @@ ul {
   width: 1230px;
 }
 
-.item-images-portfolio {
-}
-
 .item-portfolio1 {
   width: 380px;
 }
 
 /*__FOOTER__*/
 .footer {
-  background: rgba(47, 48, 58, 1);
+  background-color: rgba(47, 48, 58, 1);
 }
 
 .footer-logo {
@@ -254,9 +222,6 @@ ul {
   color: var(--accent-color);
 }
 
-.address {
-}
-
 .container-footer-contacts {
   font-weight: 400;
   font-size: 14px;
@@ -270,7 +235,6 @@ ul {
 }
 
 .footer-contacts-item {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -279,7 +243,6 @@ ul {
 }
 
 .footer-contacts-mail {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -287,9 +250,40 @@ ul {
 }
 
 .footer-contacts-tel {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-fon);
+}
+
+/*__Portfolio__*/
+
+.section-button_blue1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.button {
+  background-color: var(--main-section);
+  border-radius: 4px;
+}
+
+.item-text1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.item-link1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
