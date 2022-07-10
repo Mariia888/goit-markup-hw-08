@@ -75,7 +75,7 @@ ul {
 
   border-bottom: 2px solid gray;
   background-color: var(--title-fon);
-  outline: 5px solid turquoise;
+  /*__outline: 5px solid turquoise;__*/
   display: flexbox;
 }
 
@@ -87,7 +87,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  outline: 5px solid red;
+  /*__outline: 5px solid red;__*/
 }
 
 /*__HEADER LOGO__*/
@@ -120,7 +120,7 @@ ul {
   margin-right: 0;
   margin-left: 0;
 
-  outline: 5px solid yellow;
+  /*__outline: 5px solid yellow;__*/
 }
 
 .navigation-nav {
@@ -134,7 +134,7 @@ ul {
   margin: 24px 215px;
 }
 .navigation-nav li {
-  outline: 2px solid red;
+  /*__outline: 2px solid red;__*/
 }
 
 .navigation-menu {
@@ -218,7 +218,7 @@ ul {
   padding-bottom: 94px;
   margin-top: 0px;
   margin-bottom: 0px;
-  outline: 5px solid green;
+  /*__outline: 5px solid green;__*/
 }
 
 .container-main {
@@ -235,7 +235,7 @@ ul {
   display: flex;
   background-color: var(--hero-fon);
   letter-spacing: 0.06em;
-  outline: 5px solid tomato;
+  /*__outline: 5px solid tomato;__*/
 }
 
 .section-item-text {
