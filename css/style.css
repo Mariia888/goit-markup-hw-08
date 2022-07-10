@@ -1,3 +1,26 @@
+/*__reset styles__*/
+html {
+  box-sizing: border-box;
+  line-height: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 /*__VARIALES__*/
 :root {
   --title-fon: #ffffff;
@@ -14,11 +37,16 @@
 /*__BODY__*/
 
 body {
+  width: 1200px;
+  height: 1600px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   background-color: var(--title-fon);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
 ul {
@@ -27,11 +55,42 @@ ul {
 
 /*__HEADER__*/
 
-.header {
-  background-color: var(--title-fon);
+.container {
+  width: 1200px;
 }
 
-/*__LOGO__*/
+.header {
+  /*__width: 1600px;
+  height: 80px;__*/
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  border-bottom: 2px solid gray;
+  background-color: var(--title-fon);
+  outline: 5px solid turquoise;
+  display: flexbox;
+}
+
+.navigation {
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  outline: 5px solid red;
+}
+
+/*__HEADER LOGO__*/
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -41,20 +100,65 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03 em;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-first-letters {
   color: var(--text-fon);
 }
 
-/*__NAVIGATION__*/
+/*__HEADER NAVIGATION__*/
+
+.navigation {
+  width: 294px;
+  height: 16px;
+
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0;
+  margin-right: 0;
+  margin-left: 0;
+
+  outline: 5px solid yellow;
+}
+
+.navigation-nav {
+  min-width: 1600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  display: flex;
+  align-items: center;
+  margin: 24px 215px;
+}
+.navigation-nav li {
+  outline: 2px solid red;
+}
 
 .navigation-menu {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.navigation-menu :last-child {
+  margin-right: o;
+}
+
+.navigation-menu-item {
+  margin: 0 21px;
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .navigation-menu-link {
@@ -62,13 +166,35 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline-block;
 
   color: var(--primary-text-color);
   text-decoration: none;
+  margin: 50px;
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .navigation-menu-link:hover {
   color: var(--accent-color);
+}
+
+.navigation-contacts {
+  margin-left: 331px;
+  margin-top: 32;
+  margin-bottom: 32;
+  justify-content: flex-end;
+
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 80px;
+}
+
+.navigation-contacts-item {
+  /*__margin: 0 14px;__*/
+  /*__ background-color: pink;__*/
 }
 
 .navigation-contacts-link {
@@ -78,6 +204,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  display: inline-block;
 }
 
 .navigation-contacts-link:hover {
@@ -86,15 +213,41 @@ ul {
 
 /*__MAIN__*/
 
-.conteiner-main {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  outline: 5px solid green;
+}
+
+.container-main {
+  text-align: center;
+  margin-left: auto;
+  margin-top: 0px;
+
   background-color: var(--main-section);
 }
 
 .section-header-item {
+  width: 1600px;
+  height: 600px;
+  display: flex;
   background-color: var(--hero-fon);
+  letter-spacing: 0.06em;
+  outline: 5px solid tomato;
 }
 
 .section-item-text {
+  /*__margin-bottom: 30px;
+  margin: 0;
+  padding: 200px 452px 280px 452px;__*/
+
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 80px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -104,7 +257,19 @@ ul {
   color: var(--title-fon);
 }
 
+.position {
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+
+/*__BUTTON__*/
+
 .section-button_blue {
+  margin: 0;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 136px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -117,6 +282,11 @@ ul {
 }
 
 .button_blue {
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -125,11 +295,34 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-fon);
+  border: 1px solid transparent;
 }
 
-/*__.section-conteiner {
-  width: 1230px;
-}__*/
+/*__SECTION ONE__*/
+
+.section-header-item {
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 80px;
+}
+
+.section-header-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 80px;
+}
+
+.section-item {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 80px;
+
+  width: 1170px;
+  height: 386px;
+}
 
 .container-text {
   font-weight: 700;
@@ -146,6 +339,34 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 25px;
+}
+
+.section-list-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.our-team-list-item {
+  display: inline;
+}
+
+.main {
+  padding-top: 94px;
+  padding-bottom: 10px;
+}
+
+/*__SECTION TWO__*/
+
+.portfolio {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 80px;
 }
 
 .section-portfolio {
@@ -157,9 +378,40 @@ ul {
 }
 
 .our-team-list {
+  width: 270px;
+  height: 260px;
+
   font-size: 11px;
   font-weight: 600;
   line-height: 1.8;
+  margin-bottom: 25px;
+  display: flex;
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.our-team-item {
+  margin-left: auto;
+  margin-right: 27px;
+}
+
+.our-team-item-image {
+  display: inline-block;
+  height: 20vh;
+  text-align: center;
+}
+
+/*__SECTION THREE__*/
+
+.our-team {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 80px;
+
+  /*__margin-left: auto;
+  margin-right: 27px;
+  display: flex;
+  justify-content: space-between;__*/
 }
 
 .container {
@@ -170,12 +422,20 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.container-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .our-team-item-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .our-team-item-position {
@@ -185,6 +445,9 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .container-main-portfolio1 {
@@ -214,7 +477,17 @@ ul {
 
 /*__FOOTER__*/
 .footer {
+  /*__padding: 25px 215px 25px 215px;
+  margin: 0px;__*/
+
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: rgba(47, 48, 58, 1);
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -225,6 +498,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin: 60px;
 }
 
 .logo-first-letters {
@@ -236,6 +510,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  margin: 50px;
 }
 
 .container-footer-contacts {
@@ -244,9 +519,11 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  margin: 50px;
 }
 
 .container-footer-contacts-item {
+  display: block;
   color: var(--main-section);
   text-decoration: none;
 }
@@ -258,6 +535,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-fon);
   text-decoration: none;
+  margin: 9px;
 }
 
 .footer-contacts-mail {
@@ -266,6 +544,7 @@ ul {
   line-height: 1.71;
   color: var(--footer-color);
   text-decoration: none;
+  margin: 9px;
 }
 
 .footer-contacts-tel {
@@ -274,6 +553,7 @@ ul {
   line-height: 1.71;
   color: var(--footer-color);
   text-decoration: none;
+  margin: 9px;
 }
 
 /*__Portfolio__*/
