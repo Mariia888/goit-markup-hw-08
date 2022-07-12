@@ -575,6 +575,9 @@ ul {
 
 /*__Portfolio__*/
 
+.container-main-portfolio1 {
+}
+
 .section-button_blue1 {
   font-weight: 500;
   font-size: 16px;
@@ -584,6 +587,9 @@ ul {
   color: var(--primary-text-color);
   background-color: var(--main-section);
   border-radius: 4px;
+}
+
+.one {
 }
 
 .button {
@@ -648,6 +654,11 @@ ul {
 
 /*__BUTTON PORTFOLIO__*/
 
+.once {
+  padding-left: 279px;
+  padding-right: 279px;
+}
+
 .nav-menu-portfolio {
   margin: 0;
   display: inline-block;
@@ -689,6 +700,8 @@ ul {
 
 .item-images-portfolio {
   width: 380px;
+  display: flexbox;
+  border: 1px solid #eeeeee;
 }
 
 .item-images-portfolio:nth-child(3n) {
