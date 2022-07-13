@@ -58,7 +58,7 @@ ul {
 /*__HEADER__*/
 
 .header {
-  font-family: "Roboto", sans-serif;
+  font-family: "Releway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -403,15 +403,18 @@ ul {
   margin-top: 50px;
 }
 
+.our-team-item-titles {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .our-team-item-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .our-team-item-position {
@@ -421,9 +424,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-
-  padding-top: 10px;
-  padding-bottom: 30px;
 }
 
 .container-main-portfolio1 {
@@ -458,7 +458,6 @@ ul {
 }
 
 .container {
-  justify-content: space-between;
 }
 
 .footer-logo {
