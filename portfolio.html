@@ -41,14 +41,38 @@
             </li>
           </ul>
         </nav>
+
         <ul class="navigation-contacts">
           <li class="navigation-contacts-item">
-            <a href="mailto:info@devstudio.com" class="navigation-contacts-link"
-              >info@devstudio.com</a
+            <a
+              href="mailto:info@devstudio.com"
+              class="navigation-contacts-link"
+            >
+              <svg
+                class="icon"
+                width="16"
+                height="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.5 0h-13C.673 0 0 .673 0 1.5v9c0 .827.673 1.5 1.5 1.5h13c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5Zm0 1c.068 0 .133.014.192.039L8 6.839l-6.692-5.8A.498.498 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.095l6.672 5.783a.5.5 0 0 0 .656 0L15 2.095V10.5a.5.5 0 0 1-.5.5Z"
+                />
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="navigation-contacts-item">
             <a href="tel:+38 096 111 11 11" class="navigation-contacts-link">
+              <svg
+                class="icon1"
+                width="10"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 0h-7C.673 0 0 .673 0 1.5v13c0 .827.673 1.5 1.5 1.5h7c.827 0 1.5-.673 1.5-1.5v-13C10 .673 9.327 0 8.5 0Zm-7 1h7a.5.5 0 0 1 .5.5V12H1V1.5a.5.5 0 0 1 .5-.5Zm7 14h-7a.5.5 0 0 1-.5-.5V13h8v1.5a.5.5 0 0 1-.5.5Z"
+                />
+              </svg>
               +38 096 111 11 11</a
             >
           </li>
@@ -225,37 +249,79 @@
     <!-- Footer -->
 
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="footer-logo"
-          ><span class="logo-first-letters">Web</span>Studio</a
-        >
-        <address class="address">
-          <ul class="container-footer-contacts">
-            <li class="container-footer-contacts-item">
-              <a
-                href="http://google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Поисковая система Google"
-                class="footer-contacts-item"
-                >г. Киев,<span class="footer-contacts-item">
-                  пр-т Леси Украинки, 26</span
-                ></a
-              >
+      <section class="container link-icon">
+        <div class="footer-list">
+          <a href="./index.html" class="footer-logo"
+            ><span class="logo-first-letters">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="container-footer-contacts">
+              <li class="container-footer-contacts-item">
+                <a
+                  href="http://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Поисковая система Google"
+                  class="footer-contacts-item"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="container-footer-contacts-item">
+                <a href="mailto:info@example.com" class="footer-contacts-mail"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="container-footer-contacts-item">
+                <a href="tel:+38 099 111 11 11" class="footer-contacts-tel"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-socials container">
+          <p class="footer-name-link">присоединяйтесь</p>
+          <ul class="footer-icons">
+            <li class="footer-socials-link">
+              <a class="icon-link">
+                <svg class="icons-link" width="20" height="20">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
             </li>
-            <li class="container-footer-contacts-item">
-              <a href="mailto:info@example.com" class="footer-contacts-mail"
-                >info@example.com</a
-              >
+            <li class="footer-socials-link">
+              <a class="icon-link">
+                <svg class="icons-link" width="20" height="20">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
             </li>
-            <li class="container-footer-contacts-item">
-              <a href="tel:+38 099 111 11 11" class="footer-contacts-tel"
-                >+38 099 111 11 11</a
-              >
+            <li class="footer-socials-link">
+              <a class="icon-link">
+                <svg class="icons-link" width="20" height="20">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-link">
+              <a class="icon-link">
+                <svg class="icons-link" width="20" height="20">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
