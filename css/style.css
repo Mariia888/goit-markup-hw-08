@@ -696,6 +696,7 @@ ul {
 
 .section-button_blue1:hover,
 .section-button_blue1:focus {
+  color: var(--title-fon);
   cursor: pointer;
   fill: var(--title-fon);
   background-color: var(--accent-color);
