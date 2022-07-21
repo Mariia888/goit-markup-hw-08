@@ -83,12 +83,6 @@ ul {
   display: flex;
 }
 
-/*__padding: 0 15px;
-  margin: 0;
-  margin-right: 0;
-  margin-left: 0;__*/
-/*__outline: 5px solid red;__*/
-
 /*__HEADER LOGO__*/
 
 .logo {
@@ -97,11 +91,8 @@ ul {
   color: var(--text-fon-black);
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03 em;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  /*__padding-top: 24px;
-  padding-bottom: 25px;
-  padding-right: 94px;__*/
 }
 
 .logo-first-letters {
@@ -147,12 +138,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /*__display: inline-block;__*/
 
   color: var(--primary-text-color);
   text-decoration: none;
-
-  /*__display: block;__*/
 }
 
 .navigation-menu-link:hover {
@@ -163,13 +151,9 @@ ul {
   display: flex;
 
   margin-left: auto;
-
-  /*__min-height: 80px;__*/
 }
 
 .navigation-contacts-item {
-  /*__ margin-top: 32px;
-  margin-bottom: 32px;__*/
   margin-left: 50px;
 }
 
@@ -185,7 +169,7 @@ ul {
   color: var(--title-text-color);
   background-color: var(--title-fon);
   text-decoration: none;
-  /*__display: inline-block;__*/
+
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -264,9 +248,6 @@ ul {
 }
 
 .section-item-text {
-  /*__margin-bottom: 30px;
-  margin: 0;
-  padding: 200px 452px 280px 452px;__*/
   max-width: 696px;
   margin: 0 auto;
 
@@ -416,7 +397,6 @@ ul {
 
 .action {
   display: flex;
-  /*__justify-content: space-between;__*/
 }
 
 .our-team-item {
@@ -595,6 +575,8 @@ ul {
 }
 
 .container-footer-contacts-item {
+  width: 231px;
+  height: 21px;
   color: var(--main-section);
   text-decoration: none;
 
@@ -748,11 +730,6 @@ ul {
 .item-portfolio1 {
   width: 370px;
   height: 294px;
-
-  /*__background-color: var(--portfolio-bg-color);__*/
-  /*__border-color: tomato;
-  margin-top: 30px;
-  margin-bottom: 30px;__*/
 }
 
 .item-img-link1 {
@@ -779,9 +756,6 @@ ul {
 }
 
 .section-button_blue1 {
-  /*__margin: 0;
-  padding: 10px 32px;__*/
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -839,8 +813,8 @@ ul {
 
 .item-images-portfolio:hover,
 .item-images-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  /*__box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
+    1px 4px 6px rgba(0, 0, 0, 0.16);__*/
 }
 
 .item-images-portfolio:nth-child(3n) {
