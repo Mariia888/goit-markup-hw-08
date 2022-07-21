@@ -813,8 +813,8 @@ ul {
 
 .item-images-portfolio:hover,
 .item-images-portfolio:focus {
-  /*__box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
-    1px 4px 6px rgba(0, 0, 0, 0.16);__*/
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-images-portfolio:nth-child(3n) {
