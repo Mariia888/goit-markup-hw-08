@@ -27,15 +27,17 @@
           >
           <ul class="navigation-menu">
             <li class="navigation-menu-item">
-              <a href="index.html" class="navigation-menu-link">Студия</a>
+              <a href="index.html" class="navigation-menu-link space">Студия</a>
             </li>
             <li class="navigation-menu-item">
-              <a href="./portfolio.html" class="navigation-menu-link"
+              <a href="./portfolio.html" class="navigation-menu-link space"
                 >Портфолио</a
               >
             </li>
             <li class="navigation-menu-item">
-              <a href="./index.html" class="navigation-menu-link">Контакты</a>
+              <a href="./index.html" class="navigation-menu-link space"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
@@ -44,7 +46,7 @@
           <li class="navigation-contacts-item">
             <a
               href="mailto:info@devstudio.com"
-              class="navigation-contacts-link"
+              class="navigation-contacts-link space"
             >
               <svg class="icon" width="16" height="12">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-mail"></use>
@@ -53,7 +55,10 @@
             >
           </li>
           <li class="navigation-contacts-item">
-            <a href="tel:+38 096 111 11 11" class="navigation-contacts-link">
+            <a
+              href="tel:+38 096 111 11 11"
+              class="navigation-contacts-link space"
+            >
               <svg class="icon1" width="10" height="16">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-telefon"
@@ -74,9 +79,21 @@
           <h1 class="section-item-text position">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="section-button_blue" type="button_blue">
+          <button class="section-button_blue" data-modal-open>
             Заказать услугу
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <div class="modal-close" data-modal-close>
+                <svg class="icon-modal" width="11" height="11">
+                  <use
+                    href="./images/icons.svg/symbol-defs-close.svg#icon-Vector"
+                  ></use>
+                </svg>
+                <!--<button data-modal-close>Закрыть</button>-->
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -156,7 +173,7 @@
         <div class="container">
           <h2 class="section-portfolio">Чем мы занимаемся</h2>
           <ul class="foto-works action">
-            <li class="our-team-item">
+            <li class="our-team-item box">
               <img
                 class="our-team-image"
                 src="./images/img-6.jpg"
@@ -164,8 +181,11 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay">
+                <p class="title-img">Десктопные приложения</p>
+              </div>
             </li>
-            <li class="our-team-item">
+            <li class="our-team-item box">
               <img
                 class="our-team-image"
                 src="./images/img-7.jpg"
@@ -173,8 +193,11 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay">
+                <p class="title-img">Мобильные приложения</p>
+              </div>
             </li>
-            <li class="our-team-item">
+            <li class="our-team-item box">
               <img
                 class="our-team-image"
                 src="./images/img-8.jpg"
@@ -182,6 +205,9 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay">
+                <p class="title-img">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -204,7 +230,12 @@
                 <p class="our-team-item-position">Product Designer</p>
                 <ul class="social-networks">
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-instagram"
@@ -213,7 +244,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-twitter"
@@ -222,7 +258,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-facebook"
@@ -231,7 +272,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
@@ -256,7 +302,12 @@
                 <p class="our-team-item-position">Frontend Developer</p>
                 <ul class="social-networks">
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-instagram"
@@ -265,7 +316,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-twitter"
@@ -274,7 +330,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-facebook"
@@ -283,7 +344,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
@@ -308,7 +374,12 @@
                 <p class="our-team-item-position">Marketing</p>
                 <ul class="social-networks">
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-instagram"
@@ -317,7 +388,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-twitter"
@@ -326,7 +402,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-facebook"
@@ -335,7 +416,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
@@ -360,7 +446,12 @@
                 <p class="our-team-item-position">UI Designer</p>
                 <ul class="social-networks">
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-instagram"
@@ -369,7 +460,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-twitter"
@@ -378,7 +474,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-facebook"
@@ -387,7 +488,12 @@
                     </a>
                   </li>
                   <li class="social-icon-networks">
-                    <a class="networks-icons">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="nofollow"
+                      class="networks-icons"
+                    >
                       <svg class="icon-networks" width="20" height="20">
                         <use
                           href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
@@ -407,7 +513,7 @@
           <h2 class="container-item">Постоянные клиенты</h2>
           <ul class="container-list">
             <li class="clients-company-list">
-              <a class="clients-icon" href="">
+              <a href="#" target="_blank" rel="nofollow" class="clients-icon">
                 <svg class="icons-company" width="106" height="60">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-Logo1"
@@ -416,7 +522,7 @@
               </a>
             </li>
             <li class="clients-company-list">
-              <a class="clients-icon" href="">
+              <a href="#" target="_blank" rel="nofollow" class="clients-icon">
                 <svg class="icons-company" width="106" height="60">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-Logo2"
@@ -425,7 +531,7 @@
               </a>
             </li>
             <li class="clients-company-list">
-              <a class="clients-icon" href="">
+              <a href="#" target="_blank" rel="nofollow" class="clients-icon">
                 <svg class="icons-company" width="106" height="60">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-Logo3"
@@ -434,7 +540,7 @@
               </a>
             </li>
             <li class="clients-company-list">
-              <a class="clients-icon" href="">
+              <a href="#" target="_blank" rel="nofollow" class="clients-icon">
                 <svg class="icons-company" width="106" height="60">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-Logo4"
@@ -443,7 +549,7 @@
               </a>
             </li>
             <li class="clients-company-list">
-              <a class="clients-icon" href="">
+              <a href="#" target="_blank" rel="nofollow" class="clients-icon">
                 <svg class="icons-company" width="106" height="60">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-Logo5"
@@ -452,7 +558,7 @@
               </a>
             </li>
             <li class="clients-company-list">
-              <a class="clients-icon" href="">
+              <a href="#" target="_blank" rel="nofollow" class="clients-icon">
                 <svg class="icons-company" width="106" height="60">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-Logo6"
@@ -504,7 +610,7 @@
           <p class="footer-name-link">присоединяйтесь</p>
           <ul class="footer-icons">
             <li class="footer-socials-link">
-              <a class="icon-link">
+              <a href="#" target="_blank" rel="nofollow" class="icon-link">
                 <svg class="icons-link" width="20" height="20">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-instagram"
@@ -513,7 +619,7 @@
               </a>
             </li>
             <li class="footer-socials-link">
-              <a class="icon-link">
+              <a href="#" target="_blank" rel="nofollow" class="icon-link">
                 <svg class="icons-link" width="20" height="20">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-twitter"
@@ -522,7 +628,7 @@
               </a>
             </li>
             <li class="footer-socials-link">
-              <a class="icon-link">
+              <a href="#" target="_blank" rel="nofollow" class="icon-link">
                 <svg class="icons-link" width="20" height="20">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-facebook"
@@ -531,7 +637,7 @@
               </a>
             </li>
             <li class="footer-socials-link">
-              <a class="icon-link">
+              <a href="#" target="_blank" rel="nofollow" class="icon-link">
                 <svg class="icons-link" width="20" height="20">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
@@ -543,5 +649,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
