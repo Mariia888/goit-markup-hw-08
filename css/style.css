@@ -72,12 +72,10 @@ ul {
 }
 
 .navigation {
-  padding-left: 20px;
-  padding-right: 20px;
-
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  align-items: center;
 }
 
 /*__HEADER LOGO__*/
@@ -201,8 +199,7 @@ ul {
   background-color: var(--title-fon);
   text-decoration: none;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  text-align: center;
   transition: 250ms var(--hover-color-transition);
   position: relative;
   fill: var(--icons-color);
@@ -505,8 +502,6 @@ ul {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /*__SECTION TWO__*/
@@ -675,7 +670,9 @@ ul {
   fill: var(--icons-color);
 }
 
+.clients-icon,
 .icons-company:hover,
+.clients-icon,
 .icons-company:focus {
   fill: var(--accent-color);
 }
@@ -989,7 +986,7 @@ ul {
 }
 
 .item-images-portfolio:hover,
-.item-images-portfolio:focus {
+.item-images-portfolio:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
