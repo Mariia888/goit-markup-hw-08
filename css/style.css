@@ -363,6 +363,10 @@ ul {
 
 /*__MODAL__*/
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
