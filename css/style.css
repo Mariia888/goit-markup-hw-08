@@ -674,10 +674,9 @@ ul {
   fill: var(--icons-color);
 }
 
-.clients-icon,
+.clients-icon:hover,
 .icons-company:hover,
-.clients-icon,
-.icons-company:focus {
+.clients-icon:focus .icons-company {
   fill: var(--accent-color);
 }
 
