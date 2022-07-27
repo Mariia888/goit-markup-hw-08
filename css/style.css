@@ -909,10 +909,6 @@ ul {
   color: var(--primary-text-color);
 }
 
-.item-img-link1:focus {
-  border: 4px solid transparent;
-}
-
 /*__BUTTON PORTFOLIO__*/
 
 .once {
