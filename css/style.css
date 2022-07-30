@@ -141,7 +141,7 @@ ul {
 
   color: var(--primary-text-color);
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) fill;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) color;
   position: relative;
   fill: var(--icons-color);
 }
@@ -163,7 +163,7 @@ ul {
   background: var(--accent-color);
   border-radius: 2px;
   opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) transform;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) opacity;
   transform: translateY(calc(24px + 8px));
 }
 
