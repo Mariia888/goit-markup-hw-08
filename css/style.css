@@ -21,6 +21,10 @@ p {
   margin: 0;
 }
 
+form {
+  display: block;
+}
+
 /*__VARIALES__*/
 :root {
   --title-fon: #ffffff;
@@ -426,7 +430,7 @@ ul {
   display: block;
 }
 
-.modal-form_title {
+.modal-form__title {
   display: flex;
   flex-direction: column;
   margin-bottom: 31px;
@@ -452,7 +456,15 @@ ul {
   border-radius: 4px;
 }
 
-.modal-form_icon {
+.modal-form_input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-form_input:focus .modal-form_icon {
+  fill: #188ce8;
+}
+
+.modal-form-icon {
   fill: currentColor;
   position: absolute;
   left: 12px;
@@ -469,6 +481,11 @@ ul {
   border-radius: 4px;
   padding: 11px;
   outline: none;
+}
+
+input[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .modal-form__checkbox {
@@ -528,6 +545,39 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.modal-form__checkbox {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form_label {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--title-text-color);
+}
+
+.form_label a {
+  margin-left: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.form_input:checked + .form_icon {
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: var(--accent-color);
+  fill: var(--title-fon);
+}
+
+.form_icon:hover {
   cursor: pointer;
 }
 
