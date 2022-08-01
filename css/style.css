@@ -454,6 +454,7 @@ ul {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) border;
 }
 
 .modal-form_input:focus {
@@ -470,6 +471,7 @@ ul {
   left: 12px;
   bottom: 50%;
   transform: translateY(50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) transform;
 }
 
 .modal-form_textarea {
@@ -481,6 +483,10 @@ ul {
   border-radius: 4px;
   padding: 11px;
   outline: none;
+}
+
+.modal-form_textarea:focus {
+  border: 1px solid var(--accent-color);
 }
 
 input[type="number"] {
@@ -521,6 +527,7 @@ input[type="number"] {
   fill: none;
   margin-right: 7px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) border;
 }
 
 .form_link {
@@ -570,7 +577,7 @@ input[type="number"] {
   color: var(--accent-color);
 }
 
-.form_input:checked + .form_icon {
+.form_input:checked {
   background-color: var(--accent-color);
   background-origin: border-box;
   border-color: var(--accent-color);
@@ -578,7 +585,10 @@ input[type="number"] {
 }
 
 .form_icon:hover {
-  cursor: pointer;
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: var(--accent-color);
+  fill: var(--title-fon);
 }
 
 .modal-close {
