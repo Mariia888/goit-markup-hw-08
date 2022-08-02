@@ -396,7 +396,7 @@ ul {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 100;
-  /*__transition: opacity 500ms linear, visibility 500ms linear;__*/
+
   transition: opacity 250ms var(--hover-color-transition);
 }
 
@@ -440,7 +440,7 @@ ul {
 }
 
 .modal-form {
-  display: flex;
+  /*__display: flex;__*/
   flex-direction: column;
 }
 
@@ -517,7 +517,7 @@ ul {
 
 .modal-form__checkbox {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /*__.form-checkbox {
@@ -528,6 +528,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-text-color);
@@ -567,28 +568,22 @@ ul {
   color: var(--title-fon);
 }__*/
 
-.label {
-  display: flex;
-  align-items: center;
-}
-
 .label::after {
   content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: var(--accent-color);
 }
 
-.label + .checkbox::before {
+/*__.label + .checkbox::before {
   background-color: var(--accent-color);
   box-shadow: inset 0 0 0 4px;
-}
+}__*/
 
-.label + .checkbox:focus {
+/*__.label + .checkbox:focus {
   background-color: var(--accent-color);
   box-shadow: inset 0 0 0 4px;
-}
+}__*/
 
 /*__BTN__*/
 
@@ -614,12 +609,12 @@ ul {
 
 /*__CHECKBOX__*/
 
-.checkbox::before {
+/*__.checkbox::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
-}
+}__*/
 
 .check-icon {
   display: inline-block;
@@ -632,10 +627,12 @@ ul {
 
 .checkbox:checked + .check-icon {
   background-color: var(--accent-color);
-  background-image: url(../images/icons.svg/symbol-defs2.svg);
+  background-image: url(../images/icons.svg/check.svg);
   background-size: contain;
   background-origin: border-box;
+  border-color: transparent;
 }
+
 /*__.form_label {
   font-size: 14px;
   line-height: 1.71;
@@ -652,19 +649,19 @@ ul {
   color: var(--accent-color);
 }__*/
 
-.checkbox {
-  position: absolute;
+/*__.checkbox {
+ position: absolute;
   width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
   opacity: 0;
-  z-index: 2;
-  /*__background-color: var(--accent-color);
+  z-index: 2;__*/
+/*__background-color: var(--accent-color);
   background-origin: border-box;
   border-color: var(--accent-color);
-  fill: var(--title-fon);__*/
-}
+  fill: var(--title-fon);
+}__*/
 
 /*__.form_icon:hover {
   background-color: var(--accent-color);
