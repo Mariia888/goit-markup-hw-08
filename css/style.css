@@ -384,9 +384,9 @@ ul {
 
 /*__MODAL__*/
 
-.no-scroll {
+/*__.no-scroll {
   overflow: hidden;
-}
+}__*/
 
 .backdrop {
   position: fixed;
@@ -484,10 +484,6 @@ ul {
   fill: #188ce8;
 }
 
-/*__.modal-form_input:focus .modal-form_icon {
-  fill: #188ce8;
-}__*/
-
 .modal-form-icon {
   fill: currentColor;
   position: absolute;
@@ -504,6 +500,14 @@ ul {
 
 .modal-form_textarea {
   display: block;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
   margin-bottom: 0;
   height: 120px;
   resize: none;
@@ -519,6 +523,8 @@ ul {
   border-color: var(--accent-color);
 }
 
+/*__CHECKBOX__*/
+
 .form-text {
   position: relative;
   display: block;
@@ -526,6 +532,8 @@ ul {
 
 .label {
   font-size: 14px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .label::before {
@@ -536,6 +544,11 @@ ul {
   border: 1px solid var(--primary-text-color);
   cursor: pointer;
   border-radius: 2px;
+  position: relative;
+  top: 2px;
+  right: 9px;
+  bottom: 5px;
+  left: 0px;
 }
 
 .checkbox:checked + .label::before {
@@ -548,78 +561,12 @@ ul {
   outline: 1px solid var(--accent-color);
 }
 
-/*__input[type="number"] {
-  appearance: none;
-  -moz-appearance: textfield;
-}__*/
-
-/*________11111111111
-
-.modal-form__checkbox {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}_______*/
-
-/*__.form-checkbox {
-  position: relative;
-}__*/
-
-/*_____________1.label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--title-text-color);
-}
-
-.checkbox {
+/*__.checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
   position: absolute;
-}
-
-
-
-/*__.form_icon {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  fill: none;
-  margin-right: 7px;
-  cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) border;
-}__*/
-
-/*__.form_link {
-  margin-left: 7px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  color: var(--title-fon);
-}__*/
-
-/*____________1.label::after {
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-}_________*/
-
-/*__.label + .checkbox::before {
-  background-color: var(--accent-color);
-  box-shadow: inset 0 0 0 4px;
-}__*/
-
-/*__.label + .checkbox:focus {
-  background-color: var(--accent-color);
-  box-shadow: inset 0 0 0 4px;
 }__*/
 
 /*__BTN__*/
@@ -632,9 +579,11 @@ ul {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
   margin-top: 30px;
@@ -643,39 +592,6 @@ ul {
 .modal-form_btn:hover {
   background-color: var(--accent-color);
 }
-
-/*__CHECKBOX__*/
-
-/*__.checkbox::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-}__*/
-
-/*______________1.check-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 4px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 4px;
-  background-image: url(../images/icons.svg/check-off.svg);
-}__________*/
-
-/*_____________1.checkbox:checked + .check-icon {
-  background-color: var(--accent-color);
-  /*__background-image: url(../images/icons.svg/check.svg);__*/
-/*___________background-size: contain;
-  background-origin: border-box;
-  border-color: transparent;
-}________*/
-
-/*__.form_label {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--title-text-color);
-}__*/
 
 .label a {
   font-weight: 400;
@@ -689,27 +605,6 @@ ul {
 .label a:hover {
   color: var(--accent-color);
 }
-
-/*__.checkbox {
- position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
-  z-index: 2;__*/
-/*__background-color: var(--accent-color);
-  background-origin: border-box;
-  border-color: var(--accent-color);
-  fill: var(--title-fon);
-}__*/
-
-/*__.form_icon:hover {
-  background-color: var(--accent-color);
-  background-origin: border-box;
-  border-color: var(--accent-color);
-  fill: var(--title-fon);
-}__*/
 
 /*__MODAL-CLOSE__*/
 
