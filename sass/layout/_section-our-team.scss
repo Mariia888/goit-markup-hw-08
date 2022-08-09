@@ -1,0 +1,47 @@
+.our-team {
+  background: var(--main-section);
+}
+
+.header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.team-image {
+  width: 270px;
+  height: 260px;
+  display: block;
+}
+
+.team-employee {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-employee__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-employee__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
