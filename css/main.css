@@ -1071,6 +1071,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  list-style: none;
   margin-bottom: 4px;
 }
 
@@ -1080,6 +1081,7 @@ ul {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  list-style: none;
   margin-top: 4px;
 }
 
