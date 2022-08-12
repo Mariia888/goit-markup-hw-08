@@ -469,7 +469,7 @@ ul {
   border-color: var(--accent-color);
 }
 
-.modal-form__input:focus + .modal-form-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: #188ce8;
 }
 
