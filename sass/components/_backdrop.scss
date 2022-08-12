@@ -8,10 +8,10 @@
   z-index: 100;
 
   transition: 250ms var(--hover-color-transition);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }

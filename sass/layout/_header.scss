@@ -15,18 +15,18 @@
     align-items: center;
     padding: 24px 0px;
   }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*__HEADER NAVIGATION__*/
-
-.page-header__nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  display: flex;
-  align-items: center;
-}
 
 .navigation-menu {
   display: flex;
@@ -39,19 +39,19 @@
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
   list-style: none;
-}
 
-.navigation-menu:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .navigation-menu__item {
   margin-left: 50px;
   display: block;
-}
 
-.navigation-menu__item:first-child {
-  margin-left: 0px;
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
 .navigation-menu__link {
@@ -66,11 +66,11 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) color;
   position: relative;
   fill: var(--icons-color);
-}
 
-.navigation-menu__link:hover,
-.navigation-menu__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /*__ANIMATION-LINK__*/
@@ -102,10 +102,10 @@
   display: flex;
 
   margin-left: auto;
-}
 
-.navigation-contacts__item {
-  margin-left: 50px;
+  &__item {
+    margin-left: 50px;
+  }
 }
 
 .navigation-contacts__link {
@@ -125,6 +125,11 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) color;
   position: relative;
   fill: var(--icons-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navigation-contacts__link:hover::after,
@@ -132,25 +137,8 @@
   opacity: 1;
 }
 
-.navigation-contacts__link:hover,
-.navigation-contacts__link:focus {
-  color: var(--accent-color);
-}
-
 .navigation-contacts.space {
   color: var(--accent-color);
-}
-
-/*__HEADER ICON__*/
-
-.navigation-contacts__icon-email:hover,
-.navigation-contacts__icon-email:focus {
-  fill: var(--accent-color);
-}
-
-.navigation-contacts__icon-tell:hover,
-.navigation-contacts__icon-tell:focus {
-  fill: var(--accent-color);
 }
 
 /*__header_icons__*/
@@ -159,10 +147,20 @@
   margin-right: 10px;
   fill: currentColor;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) background;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .navigation-contacts__icon-tell {
   margin-right: 10px;
   fill: currentColor;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) background;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
