@@ -585,7 +585,6 @@ ul {
   margin: 0 auto;
   min-height: 80px;
 }
-
 .section-work__text {
   font-weight: 700;
   font-size: 36px;
@@ -616,7 +615,6 @@ ul {
 .work-list__item {
   margin-right: 30px;
 }
-
 .work-list__item:last-child {
   margin-right: 0px;
 }
@@ -655,7 +653,6 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .team-employee__name {
   font-weight: 500;
   font-size: 16px;
@@ -664,7 +661,6 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-
 .team-employee__position {
   font-weight: 400;
   font-size: 16px;
