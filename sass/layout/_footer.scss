@@ -20,6 +20,13 @@
   text-decoration: none;
 }
 
+.container-footer__item {
+  width: 231px;
+  height: 21px;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
 .footer-contacts__item {
   font-weight: 400;
   font-size: 14px;
@@ -33,6 +40,11 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.footer-contacts__item:hover,
+.footer-contacts__item:focus {
+  color: var(--accent-color);
 }
 
 .footer-contacts__mail {
