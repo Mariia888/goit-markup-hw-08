@@ -9,6 +9,12 @@
   border-radius: 4px;
   display: flex;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) border;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    fill: var(--accent-color);
+  }
 }
 
 .clients-company__icon {
@@ -17,15 +23,9 @@
   padding: 16px 32px;
   fill: var(--icons-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) fill;
-}
 
-.clients-company__net:hover,
-.clients-company__icon:hover,
-.clients-company__net:focus .clients-company__icon {
-  fill: var(--accent-color);
-}
-
-.clients-company__net:hover,
-.clients-company__net:focus {
-  border: 1px solid #2196f3;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

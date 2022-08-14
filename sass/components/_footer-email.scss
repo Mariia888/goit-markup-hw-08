@@ -1,19 +1,19 @@
 .footer-email {
   margin-left: 95px;
-}
 
-.footer-email__link {
-  padding-top: 10px;
-  margin-bottom: 20px;
-  text-align: start;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-fon);
+  &__link {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-align: start;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-fon);
+  }
 }
 
 .footer-email__form {
