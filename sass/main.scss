@@ -1,25 +1,27 @@
 @import "./utils/variables";
+@import "./utils/visually-hidden";
+
 @import "./base/common";
 @import "./base/container";
-@import "./utils/visually-hidden";
-@import "./layout/header";
-@import "./components/logo";
-@import "./layout/section-main";
-@import "./components/backdrop";
-@import "./layout/section-one";
 
+@import "./components/logo";
+@import "./components/backdrop";
 @import "./components/modal-window";
 @import "./components/modal-form";
 @import "./components/modal-btn";
 @import "./components/overlay";
-@import "./layout/section-work";
-@import "./layout/section-our-team";
 @import "./components/socials-networks";
-@import "./layout/clients-company";
-@import "./layout/footer";
 @import "./components/footer-logo";
 @import "./components/footer-socials";
 @import "./components/footer-email";
-@import "./layout/main-portfolio";
 @import "./components/button-set";
 @import "./components/projects-portfolio";
+
+@import "./layout/header";
+@import "./layout/section-main";
+@import "./layout/section-one";
+@import "./layout/section-work";
+@import "./layout/section-our-team";
+@import "./layout/clients-company";
+@import "./layout/footer";
+@import "./layout/main-portfolio";

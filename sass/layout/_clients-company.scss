@@ -29,3 +29,8 @@
     fill: var(--accent-color);
   }
 }
+
+.clients-company__net:hover .clients-company__icon,
+.clients-company__net:focus .clients-company__icon {
+  fill: var(--accent-color);
+}
