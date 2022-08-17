@@ -1,29 +1,3 @@
-html {
-  box-sizing: border-box;
-  line-height: 0;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-form {
-  display: block;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -33,8 +7,4 @@ body {
   margin: auto;
   margin-top: 0;
   margin-bottom: auto;
-}
-
-ul {
-  list-style: none;
 }

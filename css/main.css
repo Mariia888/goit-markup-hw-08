@@ -29,6 +29,17 @@
   clip: rect(0 0 0 0);
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: var(--title-fon);
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
 html {
   box-sizing: border-box;
   line-height: 0;
@@ -54,17 +65,6 @@ p {
 
 form {
   display: block;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  background-color: var(--title-fon);
-  color: var(--primary-text-color);
-  letter-spacing: 0.03em;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: auto;
 }
 
 ul {
@@ -535,6 +535,7 @@ ul {
 }
 
 .button-set__btn {
+  position: static;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -543,7 +544,7 @@ ul {
   background-color: var(--title-fon);
   border-radius: 4px;
   border-color: transparent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) background-color;
+  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 2px rgba(0, 0, 0, 0.12);
   display: flex;
   padding: 6px 22px;
 }
@@ -560,9 +561,6 @@ ul {
 
 .white {
   background: var(--main-section);
-}
-.white:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .menu-list {
@@ -730,6 +728,14 @@ ul {
   fill: var(--icons-color);
 }
 .navigation-menu__link:hover, .navigation-menu__link:focus {
+  color: var(--accent-color);
+}
+
+.page-studio {
+  color: var(--accent-color);
+}
+
+.page-portfolio {
   color: var(--accent-color);
 }
 
