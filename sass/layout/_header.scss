@@ -83,6 +83,7 @@
 
 /*__ANIMATION-LINK__*/
 
+.navigation-menu__link::before,
 .navigation-menu__link::after {
   content: "";
   position: absolute;
@@ -97,8 +98,19 @@
   transform: translateY(calc(24px + 8px));
 }
 
+//.navigation-menu__link::before,
 .navigation-menu__link:hover::after,
 .navigation-menu__link:focus::after {
+  opacity: 1;
+}
+
+.page-studio::before,
+.page-studio:hover::before {
+  opacity: 1;
+}
+
+.page-portfolio::before,
+.page-portfolio:hover::before {
   opacity: 1;
 }
 
