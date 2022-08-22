@@ -31,23 +31,6 @@
             <a href="./index.html" class="page-header__logo"
               ><span class="page-header__logo-first-letters">Web</span>Studio</a
             >
-            <button type="button" class="menu-button">
-              <svg
-                class="menu-button__icon"
-                width="40"
-                height="40"
-                aria-label="перемикач мобільного меню"
-              >
-                <use
-                  class="icon-close"
-                  href="./images/icons.svg/symbol-defs-close.svg#icon-Vector"
-                ></use>
-                <use
-                  class="icon-menu"
-                  href="./images/icons.svg/symbol-defs_menu.svg#icon-menu"
-                ></use>
-              </svg>
-            </button>
             <ul class="navigation-menu">
               <li class="navigation-menu__item">
                 <a href="index.html" class="navigation-menu__link page-studio"
@@ -103,6 +86,89 @@
               >
             </li>
           </ul>
+
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-open
+          >
+            <svg
+              class="menu-button__icon"
+              width="40"
+              height="40"
+              aria-label="перемикач мобільного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/icons.svg/symbol-defs-menu.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-mobile is-open" data-menu>
+            <div class="container menu-mobile__container">
+              <button class="menu-button__close" data-menu-close>
+                <svg
+                  class="menu-button__icon-close"
+                  width="40"
+                  height="40"
+                  aria-label="Перемикач мобільного меню"
+                >
+                  <use
+                    class="icon-close"
+                    href="./images/icons.svg/symbol-defs-menu.svg#icon-close"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="menu-mobile__nav list">
+                <li class="menu-mobile__item">
+                  <a href="./index.html" class="menu-mobile__item-link hover"
+                    >Студія</a
+                  >
+                </li>
+                <li class="menu-mobile__item">
+                  <a href="./portfolio.html" class="menu-mobile__item-link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="menu-mobile__item">
+                  <a href="./index.html" class="menu-mobile__item-link"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu-mobile__contacts list">
+                <li class="menu-mobile__contacts-item">
+                  <a href="tel:+380961111111" class="menu-mobile__contacts-tel"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-mobile__contacts-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="menu-mobile__contacts-mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu-mobile__socials list">
+                <li class="menu-mobile__socials-item">
+                  <a href="#" class="menu-mobile__socials-link">Instagram</a>
+                </li>
+                <li class="menu-mobile__socials-item">
+                  <a href="#" class="menu-mobile__socials-link">Twitter</a>
+                </li>
+                <li class="menu-mobile__socials-item">
+                  <a href="#" class="menu-mobile__socials-link">Facebook</a>
+                </li>
+                <li class="menu-mobile__socials-item">
+                  <a href="#" class="menu-mobile__socials-link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -839,7 +905,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

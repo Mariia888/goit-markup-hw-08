@@ -1,5 +1,5 @@
 .section-work {
-  @extend %link;
+  //@extend %link;
 
   padding-top: 0;
   padding-bottom: 94px;
@@ -14,7 +14,7 @@
     letter-spacing: 0.03em;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) .section-work {
     display: none;
   }
 }
@@ -36,6 +36,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 768px) .team:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .action {
@@ -43,7 +47,7 @@
 }
 
 .work-list__item {
-  @extend %link;
+  //@extend %link;
 
   margin-right: 30px;
 
@@ -51,9 +55,9 @@
     margin-right: 0px;
   }
 
-  @media screen and (min-width: 1200) {
-    font-size: 64px;
-  }
+  //@media screen and (min-width: 1200) {
+  // font-size: 64px;
+  //}
 }
 
 .work-list__image {
