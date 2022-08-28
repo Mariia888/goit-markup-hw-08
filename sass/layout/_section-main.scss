@@ -5,6 +5,16 @@
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 480px) {
+  .section {
+    width: 450px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .section-main {
   max-width: 1600px;
   height: 600px;
@@ -14,7 +24,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/fon.jpg);
+    url(../adaptive-images/desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -43,17 +53,17 @@
     text-transform: uppercase;
     color: var(--title-fon);
   }
+}
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 768px) .section-main {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-main {
     background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.1),
-        rgba(47, 48, 58, 0.1)
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
       ),
-      url(../images/fon.jpg);
-    max-width: 480px;
+      url("../adaptive-images/desktop@2x.jpg");
   }
 }
 

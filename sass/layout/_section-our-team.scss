@@ -10,11 +10,13 @@
   letter-spacing: 0.03em;
 }
 
-.team-cards {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 50px;
+@media screen and (min-width: 1200px) {
+  .team-cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+  }
 }
 
 .team-image {
@@ -44,4 +46,8 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
   }
+
+  // @media screen and (min-width: 1200px) .team-employee {
+  //  padding-bottom: 30px;
+  //}
 }
