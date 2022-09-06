@@ -109,3 +109,22 @@
     color: var(--title-fon);
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-portfolio {
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .projects-portfolio {
+    width: 450px;
+  }
+
+  .container-projects {
+  }
+}

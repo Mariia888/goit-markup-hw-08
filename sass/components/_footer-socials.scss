@@ -1,12 +1,3 @@
-.link-icon {
-  display: flex;
-  justify-content: space-between;
-}
-
-//.footer-socials {
-// margin-left: 70px;
-//}//
-
 .footer-socials__link {
   font-weight: 700;
   font-size: 14px;
@@ -20,6 +11,12 @@
 .footer-icons {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-icons {
+    margin: auto;
+  }
 }
 
 .footer-socials__item:not(:last-child) {
