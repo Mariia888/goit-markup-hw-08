@@ -1021,6 +1021,9 @@ ul {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .poster {
+    height: 146.8px;
+  }
   .projects-portfolio {
     width: 720px;
     display: flex;
@@ -1028,9 +1031,22 @@ ul {
     justify-content: space-between;
     row-gap: 30px;
   }
+  .projects-portfolio__cards {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .container-projects {
+    width: 720px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .projects-portfolio {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+  .container-projects {
     width: 450px;
   }
 }
