@@ -1066,7 +1066,7 @@ ul {
     border-bottom: 1px solid #ececec;
     background-color: var(--title-fon);
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 10px;
   }
   .page-header__container {
     display: flex;
@@ -1210,6 +1210,11 @@ ul {
   }
   .navigation-contacts__icon-tell:hover, .navigation-contacts__icon-tell:focus {
     fill: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header {
+    padding-bottom: 10px;
   }
 }
 .section {

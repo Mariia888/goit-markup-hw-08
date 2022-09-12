@@ -18,7 +18,7 @@
     background-color: var(--title-fon);
 
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 10px;
   }
 
   .page-header__container {
@@ -205,5 +205,11 @@
     &:focus {
       fill: var(--accent-color);
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header {
+    padding-bottom: 10px;
   }
 }
